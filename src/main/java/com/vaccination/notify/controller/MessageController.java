@@ -12,10 +12,10 @@ import com.vaccination.notify.service.MessageService;
 @RestController
 @RequestMapping(value = "/v1")
 public class MessageController {
-	
+
 	@Autowired
 	MessageService service;
-	
+
 	@PostMapping("/sendMessage")
 	public String sendMessage(@RequestBody MessageObject messageObject) {
 		service.sendMessage(messageObject);

@@ -1,7 +1,7 @@
 package com.vaccination.notify.bean;
 
 public class MessageObject {
-	
+
 	private String toSender;
 	private String message;
 
